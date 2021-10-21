@@ -46,6 +46,29 @@ In order to perform testing on the models, the test_model() method needs to be c
 
 > controller = mc.mainController() 
 
-  #### Filtering images 
+### Filtering images 
 
+##### Before the images can be filtered, the appropriate setter methods need to be called. These steps are described below. 
+
+##### Firstly, the folder containing the grayscale dataset has to be set. 
+
+> controller.setImagePath('./dataset/REGULAR RGB/testing_set/asus_test/asus_vulnerable/') 
+
+ 
+
+##### Next, the destination folder in which the filtered images are written to needs to be set. 
+
+> controller.setDestinationPath('./dataset/HOG/testing/') 
+
+ 
+
+##### The type of filtering algorithm used needs to be set with the following command.  
+
+> controller.setfilter('lbp') 
+
+ 
+
+##### The last step is to call the filter_images() method which will use the previously set parameters to apply the appropriate filter.  
+
+> controller.filter_images() 
  
