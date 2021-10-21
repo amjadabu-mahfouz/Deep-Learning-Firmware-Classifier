@@ -46,6 +46,6 @@ In order to perform testing on the models, the test_model() method needs to be c
 
 > controller = mc.mainController() 
 
-### Filtering images 
+  ### Filtering images 
 
  
