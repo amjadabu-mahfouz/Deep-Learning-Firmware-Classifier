@@ -40,7 +40,7 @@ In order to perform testing on the models, the test_model() method needs to be c
 
 ## Using the Main Controller 
 
-##### The first step is to import and initialize the main controller 
+##### The first step is to import and initialize the main controller. 
 
 > import mainController as mc 
 
@@ -71,4 +71,15 @@ In order to perform testing on the models, the test_model() method needs to be c
 ##### The last step is to call the filter_images() method which will use the previously set parameters to apply the appropriate filter.  
 
 > controller.filter_images() 
+
+ 
+
+ 
+
+### Testing CNN models 
+
+##### Testing the models is simple and requires only one method call to test_model(). The testing and training datasets have to be made beforehand and their paths supplied as parameters. Refer to the section above on the MainControlly.py class for more details on the parameters.  
+
+> controller.test_model('1', 'test1_Gabor', './dataset/HOG/asus_train', './dataset/HOG/asus_test') 
+
  
