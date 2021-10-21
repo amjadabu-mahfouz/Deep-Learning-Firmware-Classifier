@@ -38,10 +38,14 @@ To apply any of the image filters, the first step is to have or create a folder 
 In order to perform testing on the models, the test_model() method needs to be called with the appropriate parameters. The first parameter is the model number and is used to reference the premade model in the “CNN models/” folder. The second parameter is the model's name and is used to save the model under a different name after training. The third and fourth parameters are for the paths of the training and testing datasets respectively.  
 
 
-As Kanye West said:
+## Using the Main Controller 
 
-> We're living the future so
-> the present is our past.
+##### The first step is to import and initialize the main controller 
 
-I think you should use an
-`<addr>` element here instead.
+> import mainController as mc 
+
+> controller = mc.mainController() 
+
+### Filtering images 
+
+ 
