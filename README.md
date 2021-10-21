@@ -28,3 +28,11 @@ This class creates six predetermined convolutional neural network models and sto
 ###   ImageConverter.py 
 
 This class takes the file name, image type, and image name as parameters then uses them to convert the file to either a grayscale or RGB image. The file_name parameter represents the name and path of the file to be converted to an image, the image_type parameter is a flag that specifies whether the converted image is grayscale (0) or RGB (1), and the image_name is what the converted image will be renamed to.  
+
+### MainController.py  
+
+This class connects all the previous files and used for applying image filters and testing the CNN models on premade image datasets.  
+
+To apply any of the image filters, the first step is to have or create a folder containing the grayscale images of the dataset. The second step is to call the appropriate setter methods in the MainController.py, otherwise the feature extraction calls won't work. Finally, the filter_images() method is called to apply the selected filter; the filter_images method won't work if the parameters are improperly set in the second step. 
+
+In order to perform testing on the models, the test_model() method needs to be called with the appropriate parameters. The first parameter is the model number and is used to reference the premade model in the “CNN models/” folder. The second parameter is the model's name and is used to save the model under a different name after training. The third and fourth parameters are for the paths of the training and testing datasets respectively.  
