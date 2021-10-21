@@ -36,3 +36,12 @@ This class connects all the previous files and used for applying image filters a
 To apply any of the image filters, the first step is to have or create a folder containing the grayscale images of the dataset. The second step is to call the appropriate setter methods in the MainController.py, otherwise the feature extraction calls won't work. Finally, the filter_images() method is called to apply the selected filter; the filter_images method won't work if the parameters are improperly set in the second step. 
 
 In order to perform testing on the models, the test_model() method needs to be called with the appropriate parameters. The first parameter is the model number and is used to reference the premade model in the “CNN models/” folder. The second parameter is the model's name and is used to save the model under a different name after training. The third and fourth parameters are for the paths of the training and testing datasets respectively.  
+
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+
+I think you should use an
+`<addr>` element here instead.
